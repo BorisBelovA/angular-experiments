@@ -1,0 +1,4 @@
+<p>open-closed works!</p>
+<div>
+    <div @fadeIn *ngIf="isShown" [@openClose]="isOpen ? 'open' : 'closed'" (click)="toggle()">{{isOpen ? 'Open' : 'Closed'}}</div>
+</div>
